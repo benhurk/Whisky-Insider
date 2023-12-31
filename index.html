@@ -3,142 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+    <title>Whisky Insider</title>
     <link rel="stylesheet" href="main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Playfair+Display&family=Recursive&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>Estante virtual</h1>
+    <header id="site_header">
+        <div class="container">
+            <a href=index.html class="logo"><h1>Whisky Insider</h1></a>
+            <nav>
+                <ul>
+                    <li><a href=#>Lista</a></li>
+                    <li><a href=about.html>Sobre | Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <aside>
-        <nav>
-            <div class="container">
-                <details>
-                    <summary><strong>Single malt</strong></summary>
-                        <ul>
-                            <li><a href=#Singleton12>Singleton 12 anos Dufftown</a></li>
-                            <li><a href=#LaphroaigSelect>Laphroaig Select</a></li>
-                        </ul>
-                </details>
-            </div>
-                    
-            <div class="container">
-                <details>
-                    <summary><strong>Blend scotch</strong></summary>
-                        <ul>
-                            <li>Chivas extra 13 anos</li>
-                            <li>Johnnie Walker doubleback</li>
-                            <li>Ballatine's 17 anos</li>
-                        </ul>
-                </details>
-            </div>
-
-            <div class="container">
-                <details>
-                    <summary><strong>Bourbon</strong></summary>
-                        <ul>
-                            <li>Eagle rare 10 anos</li>
-                        </ul>
-                </details>
-            </div>
-
-            <div class="container">
-                <details>
-                    <summary><strong>Irish</strong></summary>
-                        <ul>
-                            <li>Jameson IPA edition</li>
-                        </ul>
-                </details>
-            </div>
-        </nav>
-    </aside>
+    <header id="list_header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href=#singlemalt_articles>Single Malts</a></li>
+                    <li><a href=#blend_articles>Blends</a></li>
+                    <li><a href=#bourbon_articles>Bourbon</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <main>
-        <section id="whisky_articles">
-            <h2>Single malts</h2>
-            <article id="Singleton12">
-                <h3>Singleton 12 anos</h3>
-                <p>Frutado, cítrico e maltoso. Nuances de limão, amendoim, chocolate e café, um pouco picante e rebelde. Simples mas compensa comprar por volta de R$130 - R$140.</p>
-                <img src="img/singleton12.jpg" class="demopic" alt="Garrafa e caixa de um Singleton 12 anos Dufftown" title="Singleton 12 Dufftown" width="540" height="540" loading="lazy">
-                <table>
-                    <caption>Características</caption>
-                    
-                    <tbody>
-                        <tr>
-                            <td>Tipo</td>
-                            <td>Scotch</td>
-                        </tr>
+        <section>
+            <div class="container">
+                <h2>Whisky Reviews</h2>
+                <nav>
+                    <details>
+                        <summary>Single Malts</summary>
+                        <ul>
+                            <li><a href=#Singleton12>Singleton 12 anos</a></li>
+                            <li><a href=#LaphroaigSelect>Laphroaig Select</a></li>
+                        </ul>
+                    </details>
 
-                        <tr>
-                            <td>Região</td>
-                            <td>Speyside</td>
-                        </tr>
+                    <details>
+                        <summary>Blends</summary>
+                        <ul>
+                            <li><a href=#Ballantines17>Ballantines 17</a></li>
+                        </ul>
+                    </details>
 
-                        <tr>
-                            <td>Maturação</td>
-                            <td>12 anos</td>
-                        </tr>
+                    <details>
+                        <summary>Bourbon</summary>
+                        <ul>
+                            <li><a href=#></a></li>
+                        </ul>
+                    </details>
+                </nav>
+            </div>
+        </section>
+        
+        <section id="singlemalt_articles">
+            <div class="container">
+                <h2>SINGLE MALTS</h2>
+                
+                <article id="Singleton12">
+                    <h3>Singleton 12 anos</h3>
+                    <div class="container">
+                        <img src="img/singleton12.jpg" alt="Garrafa e caixa de um Singleton 12 anos Dufftown" title="Singleton 12 Dufftown" loading="lazy">
+                        <table class="content_table">
+                            <thead>
+                                <tr><caption>Características</caption></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tipo</td>
+                                    <td>Scotch</td>
+                                </tr>
+                                <tr>
+                                    <td>Região</td>
+                                    <td>Speyside</td>
+                                </tr>
+                                <tr>
+                                    <td>Maturação</td>
+                                    <td>12 anos</td>
+                                </tr>
+                                <tr>
+                                    <td>Barris</td>
+                                    <td>Ex-bourbon refill, Sherry oloroso</td>
+                                </tr>
+                                <tr>
+                                    <td>Finalização</td>
+                                    <td>Carvalho europeu</td>
+                                </tr>
+                                <tr>
+                                    <td>Filtragem</td>
+                                    <td>Sim</td>
+                                </tr>
+                                <tr>
+                                    <td>Cor</td>
+                                    <td>Artificial</td>
+                                </tr>
+                                <tr>
+                                    <td>ABV</td>
+                                    <td>40%</td>
+                                </tr>
+                                <tr>
+                                    <td>Preço</td>
+                                    <td>R$140,00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt fugiat excepturi dolorum odio adipisci voluptatibus quo quidem veniam quaerat, harum modi repellat voluptates, eius corrupti error numquam quas fuga cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita repellat deserunt, aperiam iure, architecto nam quod ut dolores possimus magnam totam. Ducimus excepturi ut ullam minus, non similique aut voluptatibus.</p>
+                </article>
 
-                        <tr>
-                            <td>Barril</td>
-                            <td>Sherry oloroso, ex-bourbon refill</td>
-                        </tr>
+                <article id="LaphroaigSelect"> 
+                    <h3>Laphroaig Select</h3>
+                    <div class="container">
+                        <img src="img/laphroaigselect.jpg" alt="Garrafa e caixa de um Laphroaig Select" title="Laphroaig Select" loading="lazy">
+                        <table class="content_table">
+                            <thead>
+                                <tr><caption>Características</caption></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tipo</td>
+                                    <td>Scotch</td>
+                                </tr>
+                                <tr>
+                                    <td>Região</td>
+                                    <td>Islay</td>
+                                </tr>
+                                <tr>
+                                    <td>Maturação</td>
+                                    <td>NAS</td>
+                                </tr>
+                                <tr>
+                                    <td>Barris</td>
+                                    <td>Ex-bourbon first fill, Quarter Cask, PX, Carvalho europeu</td>
+                                </tr>
+                                <tr>
+                                    <td>Finalização</td>
+                                    <td>Carvalho americano virgem</td>
+                                </tr>
+                                <tr>
+                                    <td>Filtragem</td>
+                                    <td>Não</td>
+                                </tr>
+                                <tr>
+                                    <td>Cor</td>
+                                    <td>Natural</td>
+                                </tr>
+                                <tr>
+                                    <td>ABV</td>
+                                    <td>40%</td>
+                                </tr>
+                                <tr>
+                                    <td>Preço</td>
+                                    <td>R$340,00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, quasi omnis. Ullam ipsa sunt tenetur voluptatum iste amet voluptates quam quo veritatis, nam dolor voluptatibus. Aliquam natus quae beatae ratione. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit assumenda, distinctio sunt ipsum, qui ea aliquid eaque dolorem corrupti reprehenderit quidem accusamus quasi totam aspernatur quibusdam nihil, aperiam deserunt adipisci.</p>
+                </article>
+            </div>
+        </section>
 
-                        <tr>
-                            <td>ABV</td>
-                            <td>40%</td>
-                        </tr>
-
-                        <tr>
-                            <td>Preço</td>
-                            <td>R$140,00</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
-
-            <article id="LaphroaigSelect"> 
-                <h3>Laphroaig Select</h3>
-                <p>Defumado, marítimo, bem amadeirado, um pouco doce na finalização. Entrega muito boa, definitivamente cumpre a proposta de ser a porta de entrada da Laphroaig.</p>
-                <img src="img/laphroaigselect.jpg" class="demopic" alt="Garrafa e caixa de um Laphroaig Select" title="Laphroaig Select" width="540" height="540" loading="lazy">
-                <table>
-                    <caption>Características</caption>
-                    
-                    <tbody>
-                        <tr>
-                            <td>Tipo</td>
-                            <td>Scotch</td>
-                        </tr>
-
-                        <tr>
-                            <td>Região</td>
-                            <td>Islay</td>
-                        </tr>
-
-                        <tr>
-                            <td>Maturação</td>
-                            <td>NAS</td>
-                        </tr>
-
-                        <tr>
-                            <td>Barril</td>
-                            <td>6 meses de finalização em carvalho americano virgem</td>
-                        </tr>
-
-                        <tr>
-                            <td>ABV</td>
-                            <td>40%</td>
-                        </tr>
-
-                        <tr>
-                            <td>Preço</td>
-                            <td>R$340,00</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
+        <section id="blend_articles">
+            <div class="container">
+                <h2>BLENDS</h2>
+                <article id="Ballantines17">
+                    <h3>Ballantine's 17 anos</h3>
+                    <div class="container">
+                        <img src="img/ballantines17.jpg" alt="Garrafa e caixa de um Ballantine's 17" title="Ballantines 17" loading="lazy">
+                        <table class="content_table">
+                            <thead>
+                                <tr><caption>Características</caption></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tipo</td>
+                                    <td>Scotch</td>
+                                </tr>
+                                <tr>
+                                    <td>Maturação</td>
+                                    <td>17 anos</td>
+                                </tr>
+                                <tr>
+                                    <td>Composição</td>
+                                    <td>Blend composto por em torno de 40 whiskies</td>
+                                </tr>
+                                <tr>
+                                    <td>Grupo</td>
+                                    <td>Pernod Ricard</td>
+                                </tr>
+                                <tr>
+                                    <td>Cor</td>
+                                    <td>Artificial</td>
+                                </tr>
+                                <tr>
+                                    <td>ABV</td>
+                                    <td>43%</td>
+                                </tr>
+                                <tr>
+                                    <td>Preço</td>
+                                    <td>R$320,00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt fugiat excepturi dolorum odio adipisci voluptatibus quo quidem veniam quaerat, harum modi repellat voluptates, eius corrupti error numquam quas fuga cupiditate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita repellat deserunt, aperiam iure, architecto nam quod ut dolores possimus magnam totam. Ducimus excepturi ut ullam minus, non similique aut voluptatibus.</p>
+                </article>
+            </div>
         </section>
     </main>
 </body>
